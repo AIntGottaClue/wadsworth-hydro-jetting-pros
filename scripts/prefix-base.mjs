@@ -6,6 +6,6 @@ if (!base) process.exit(0);
 const walk = (d) => readdirSync(d).flatMap((f) => { const p = join(d, f); return statSync(p).isDirectory() ? walk(p) : [p]; });
 for (const f of walk('dist').filter((f) => f.endsWith('.html'))) {
   let s = readFileSync(f, 'utf8');
-  s = s.replace(/(href|src)="\/(?!\/)/g, `$1="${base}/`).replace(/(<link rel="preload" as="image" href=")\/(?!\/)/g, `$1${base}/`);
+  s = s.replace(/(href|src)="\/(?!\/)/g, `$1="${base}/`);
   writeFileSync(f, s);
 }
