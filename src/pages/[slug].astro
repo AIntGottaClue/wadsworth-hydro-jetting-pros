@@ -1,0 +1,9 @@
+---
+import PageView from '../components/PageView.astro';
+import content from '../data/content.json';
+export function getStaticPaths() {
+  return Object.keys(content.pages).filter((s) => s !== '/').map((slug) => ({ params: { slug }, props: {} }));
+}
+const { slug } = Astro.params;
+---
+<PageView slug={slug} />

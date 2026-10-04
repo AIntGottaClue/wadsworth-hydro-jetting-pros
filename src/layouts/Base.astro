@@ -1,0 +1,40 @@
+---
+import { siteConfig } from '../data/siteConfig';
+import '../styles/site.css';
+const { title, desc, canonical, ld = [], hero, modified } = Astro.props;
+const brand = siteConfig.brand;
+const ga = siteConfig.ga4MeasurementId;
+const fonts = siteConfig.fontsHref;
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={desc} />
+<link rel="canonical" href={canonical} />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content={brand} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={desc} />
+<meta property="og:url" content={canonical} />
+<meta name="twitter:card" content="summary" />
+<meta property="article:modified_time" content={modified} />
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href={fonts} />
+{hero && <link rel="preload" as="image" href={hero} fetchpriority="high" />}
+{ga && <script async src={`https://www.googletagmanager.com/gtag/js?id=${ga}`}></script>}
+{ga && <script is:inline define:vars={{ ga }}>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config',ga)</script>}
+{ld.map((j) => <script type="application/ld+json" set:html={j} />)}
+</head>
+<body>
+<slot />
+<script defer src="https://api.airchatty.com/js/external-tracking.js" data-tracking-id={siteConfig.airchattyTrackingId}></script>
+<script defer src="/assets/form.js"></script>
+<script defer src="/assets/ui.js"></script>
+</body>
+</html>

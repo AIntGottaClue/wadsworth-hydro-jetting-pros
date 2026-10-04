@@ -1,0 +1,202 @@
+{
+ "/": {
+  "1": {
+   "src": "/assets/img/action-on-the-job-13.webp",
+   "alt": "Technician running a hydro jetting hose on a service call",
+   "w": 1200,
+   "h": 896
+  },
+  "2": {
+   "src": "/assets/img/og-pipe-jetting.webp",
+   "alt": "Hydro jetting nozzle clearing a sewer line",
+   "w": 1200,
+   "h": 859
+  },
+  "3": {
+   "src": "/assets/img/digital-diagnostic-integration-29.webp",
+   "alt": "Camera inspection of a drain line",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "severe-grease-and-sludge": {
+  "0": {
+   "src": "/assets/img/grease-trap-cleanout-32.webp",
+   "alt": "Grease trap cleanout being serviced",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/grease-sludge-cross-section-31.webp",
+   "alt": "Cross section of a pipe with sludge buildup",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "tree-root-intrusions": {
+  "0": {
+   "src": "/assets/img/root-cutting-yard-36.webp",
+   "alt": "Technician cutting roots from a yard sewer line",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/root-macro-action-37.webp",
+   "alt": "Close view of roots being cut from a pipe",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "recurring-clogs-and-slow-drains": {
+  "0": {
+   "src": "/assets/img/recurring-clogs-clean-sweep-41.webp",
+   "alt": "Clean sweep of a drain line after cleaning",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/recurring-clogs-before-after-40.webp",
+   "alt": "Before and after view of a cleared line",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "mineral-and-scale-deposits": {
+  "0": {
+   "src": "/assets/img/mineral-scale-macro-42.webp",
+   "alt": "Close view of mineral scale inside a pipe",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/mineral-scale-industrial-43.webp",
+   "alt": "Industrial pipe with scale deposits",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "preventative-maintenance": {
+  "0": {
+   "src": "/assets/img/preventative-digital-inspection-47.webp",
+   "alt": "Digital inspection of a drain line",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/preventative-service-fleet-46.webp",
+   "alt": "Service vehicles ready for a maintenance visit",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "how-hydro-jetting-works": {
+  "0": {
+   "src": "/assets/img/power-spray-3.webp",
+   "alt": "High pressure water spray in a pipe",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/sonic-blast-7.webp",
+   "alt": "Hydro jetting nozzle in action",
+   "w": 1200,
+   "h": 896
+  },
+  "2": {
+   "src": "/assets/img/digital-diagnostic-integration-28.webp",
+   "alt": "Camera inspection screen",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "hydro-jetting-vs-snaking": {
+  "0": {
+   "src": "/assets/img/og-pipe-jetting.webp",
+   "alt": "Hydro jetting nozzle clearing a sewer line",
+   "w": 1200,
+   "h": 859
+  },
+  "1": {
+   "src": "/assets/img/power-spray-1.webp",
+   "alt": "Water jet cleaning a pipe",
+   "w": 1200,
+   "h": 896
+  },
+  "2": {
+   "src": "/assets/img/split-screen-miracle-20.webp",
+   "alt": "Pipe before and after cleaning",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "downtown-wadsworth": {
+  "0": {
+   "src": "/assets/img/commercial-scale-expertise-16.webp",
+   "alt": "Commercial drain line being serviced",
+   "w": 1200,
+   "h": 670
+  },
+  "1": {
+   "src": "/assets/img/og-hero-jetting.webp",
+   "alt": "Hydro jetting work in a large pipe",
+   "w": 1200,
+   "h": 669
+  }
+ },
+ "wadsworth-township": {
+  "0": {
+   "src": "/assets/img/action-on-the-job-15.webp",
+   "alt": "Technician at work on a residential drain line",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/sparkling-finish-22.webp",
+   "alt": "Clean pipe after hydro jetting",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "rittman": {
+  "0": {
+   "src": "/assets/img/elite-technician-10.webp",
+   "alt": "Technician preparing a jetting hose",
+   "w": 1200,
+   "h": 896
+  },
+  "1": {
+   "src": "/assets/img/digital-diagnostic-integration-30.webp",
+   "alt": "Camera view of a drain line",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "doylestown": {
+  "0": {
+   "src": "/assets/img/og-hero-jetting.webp",
+   "alt": "Commercial scale drain work",
+   "w": 1200,
+   "h": 669
+  },
+  "1": {
+   "src": "/assets/img/action-on-the-job-14.webp",
+   "alt": "Technician working with a jetting hose",
+   "w": 1200,
+   "h": 896
+  }
+ },
+ "seville": {
+  "0": {
+   "src": "/assets/img/og-hero-jetting.webp",
+   "alt": "Hydro jetting in a main line",
+   "w": 1200,
+   "h": 669
+  },
+  "1": {
+   "src": "/assets/img/action-on-the-job-13.webp",
+   "alt": "Technician running a hydro jetting hose",
+   "w": 1200,
+   "h": 896
+  }
+ }
+}

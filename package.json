@@ -1,0 +1,15 @@
+{
+  "name": "wadsworth-hydro-jetting-pros",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "build:preview": "astro build && node scripts/prefix-base.mjs /wadsworth-hydro-jetting-pros"
+  },
+  "dependencies": {
+    "astro": "^5.13.0"
+  }
+}
