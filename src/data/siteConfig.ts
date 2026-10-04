@@ -4,7 +4,7 @@ export const siteConfig = {
   origin: 'https://wadsworthhydrojetting.prosapp.site',
   phoneDisplay: '(877) 761-0283',
   phoneHref: '+18777610283',
-  ga4MeasurementId: '',
+  ga4MeasurementId: 'G-5PREGPPEGG',
   airchattyTrackingId: 'tk_61d238e145314251999b74fdd5c953cf',
   brandCity: 'Wadsworth',
   cityState: 'Wadsworth, Ohio',
