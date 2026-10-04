@@ -1,5 +1,5 @@
 @import './common.css';
-:root{--deep:oklch(.18 .045 250);--deepfg:oklch(.97 .005 95);--primary:oklch(.3 .07 248);--accent:oklch(.74 .17 52);--accentfg:oklch(.2 .05 250);--bg:oklch(.985 .005 95);--fg:oklch(.24 .04 252);--muted:oklch(.5 .03 250);--mutedbg:oklch(.955 .006 95);--aqua:oklch(.9 .045 195);--line:oklch(.9 .015 245);--card:#fff;--fab:oklch(.6 .17 45);--fab-glow:oklch(.6 .17 45/.45);--fab-ring:oklch(.6 .17 45/.2)}
+:root{--deep:oklch(.18 .045 250);--deepfg:oklch(.97 .005 95);--primary:oklch(.3 .07 248);--accent:oklch(.78 .12 188);--accentfg:oklch(.2 .05 250);--bg:oklch(.985 .005 95);--fg:oklch(.24 .04 252);--muted:oklch(.5 .03 250);--mutedbg:oklch(.955 .006 95);--aqua:oklch(.9 .045 195);--line:oklch(.9 .015 245);--card:#fff;--fab:oklch(.5 .09 192);--fab-glow:oklch(.5 .09 192/.45);--fab-ring:oklch(.5 .09 192/.2)}
 body{background:var(--bg);color:var(--fg);font-family:'Barlow',ui-sans-serif,system-ui,sans-serif;font-size:17px;line-height:1.65}
 h1,h2,h3,.brand-txt,.ftr h4{font-family:'Archivo Black','Barlow',sans-serif;text-transform:uppercase;font-weight:400;line-height:1.1}
 .hdr{position:sticky;top:0;z-index:50;background:oklch(.985 .005 95/.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
