@@ -7,7 +7,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "build:preview": "astro build && node scripts/prefix-base.mjs /wadsworth-hydro-jetting-pros"
+    "build:preview": "BASE=/wadsworth-hydro-jetting-pros astro build && node scripts/neighborhood-preview.mjs /wadsworth-hydro-jetting-pros"
   },
   "dependencies": {
     "astro": "^5.13.0"
