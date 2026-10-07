@@ -24,7 +24,7 @@ const drop = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke
       {hoods.length > 0 && <div class="dd"><button type="button" class="dd-btn" aria-expanded="false">Service Areas <span aria-hidden="true">&#8964;</span></button>
         <div class="dd-menu">{hoods.map(([n, s]) => <a href={`/${s}/`}>{n}</a>)}</div></div>}
       <a href="/how-hydro-jetting-works/">How it works</a>
-      <a href="#request">Contact</a>
+      <a href="/contact/">Contact</a>
       <a class="btn btn-primary nav-call" href={tel} aria-label={`Call ${brand} at ${phone}`}><span set:html={phoneIcon} />{phone}</a>
     </nav>
   </div>
