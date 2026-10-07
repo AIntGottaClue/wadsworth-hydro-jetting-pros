@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+import Chrome from '../components/Chrome.astro';
+import content from '../data/content.json';
+import images from '../data/images.json';
+import { siteConfig } from '../data/siteConfig';
+const slug = 'contact';
+const home0 = content.pages['/'];
+const pg = {
+  title: 'Contact Wadsworth Hydro Jetting Pros | Wadsworth, OH',
+  desc: 'Call or send a request to Wadsworth Hydro Jetting Pros about a slow drain, repeat clog or sewer line in Wadsworth, Ohio.',
+  h1: 'Contact Wadsworth Hydro Jetting Pros',
+  heroP: 'Tell us which drain is slow or backing up and where the property is. Calling is the fastest way to reach us, or send the form and we will follow up.',
+  bc: 'Contact',
+  ld: [],
+  sections: [],
+  formHtml: String(home0.formHtml).replace('value="Homepage"', 'value="contact"').replace('value="Home"', 'value="contact"'),
+};
+const home = false;
+const fill = (s) => String(s ?? '').replace(/\{\{PHONE_DISPLAY\}\}/g, siteConfig.phoneDisplay).replace(/\{\{PHONE_HREF\}\}/g, siteConfig.phoneHref).replace(/\{\{BRAND\}\}/g, siteConfig.brand);
+const url = siteConfig.origin + (home ? '/' : `/${slug}/`);
+const modified = siteConfig.lastModified;
+const crumbs = home ? null : { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.origin + '/' },
+  { '@type': 'ListItem', position: 2, name: pg.bc || slug, item: url } ] };
+const ld = pg.ld;
+const tel = 'tel:' + siteConfig.phoneHref;
+const heroImg = home ? siteConfig.heroImage : null;
+const figs = images[slug] || {};
+const hasForm = !!pg.formHtml;
+---
+<Base title={pg.title} desc={pg.desc} canonical={url} ld={ld} hero={heroImg} modified={modified}>
+<Chrome part="header" fill={fill} />
+<main id="main">
+  <section class={`hero ${home ? 'hero-home' : 'hero-page'}`} id="request">
+    {home && <img class="hero-bg" src={siteConfig.heroImage} alt={siteConfig.heroAlt} width="1808" height="1008" fetchpriority="high" decoding="async" />}
+    {home && <div class="hero-shade"></div>}
+    <div class="hero-in hero-grid">
+      <div class="hero-copy">
+        {pg.bc && <nav class="crumbs" aria-label="Breadcrumb"><a href="/">Home</a> / {pg.bc}</nav>}
+        <h1 set:html={fill(pg.h1)} />
+        <p class="hero-p" set:html={fill(pg.heroP)} />
+        <div class="hero-actions">
+          <a class="btn btn-primary" href={tel} aria-label={`Call ${siteConfig.brand} at ${siteConfig.phoneDisplay}`} data-phone>{siteConfig.phoneDisplay}</a>
+        </div>
+      </div>
+      <div class="form-card hero-form"><h2 class="form-h">Request a call</h2><Fragment set:html={pg.formHtml} /></div>
+    </div>
+  </section>
+  {pg.sections.map((s, i) => (
+    <section class={`sec sec-${s.kind} sec-${i % 2 ? 'b' : 'a'}`}><div class="sec-in"><Fragment set:html={fill(s.html)} />{figs[String(i)] && <figure class="sec-fig"><img src={figs[String(i)].src} alt={figs[String(i)].alt} width={figs[String(i)].w} height={figs[String(i)].h} loading="lazy" decoding="async" /></figure>}</div></section>
+  ))}
+  {pg.faq && (
+    <section class="sec sec-faq"><div class="sec-in">
+      <h2 set:html={fill(pg.faqH2)} />
+      <div class="faq">{pg.faq.map((f) => <details><summary set:html={fill(f.q)} /><p set:html={fill(f.a)} /></details>)}</div>
+    </div></section>
+  )}
+</main>
+<Chrome part="footer" fill={fill} />
+</Base>
